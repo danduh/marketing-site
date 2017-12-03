@@ -1,0 +1,16 @@
+{
+  "S3Bucket": "marketing-monitor-crypto",
+  "releaseVersion": null,
+  "distFolder": null,
+  "version": "version",
+  "sourceFolder": "./dist",
+  "region": "eu-west-1",
+  "DistributionId": "E1G93N1HV0EUDP",
+  "ItemsToInvalidate": [
+    "/*",
+    "/index.html"
+  ],
+  "AWSProfile": "coinsProfile",
+  "ApplicationName": "NGX-Coins-PROD",
+  "EnvironmentName": "Production"
+}

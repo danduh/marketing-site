@@ -1,0 +1,15 @@
+{
+  "name": "monitor-crypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uploadTo:prod": "aws-fed-deployment --dpl-config config/deploy.prod.config.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-fed-deployment": "^0.1.0"
+  }
+}
