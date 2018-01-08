@@ -10,6 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-fed-deployment": "^0.1.0"
+    "aws-fed-deployment": "^0.1.0",
+    "amphtml-validator": "^1.0.18",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.2.2",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-purifycss": "^0.2.0",
+    "purifycss": "^1.1.9"
+  },
+  "devDependencies": {
+    "gulp-clean": "^0.3.2"
   }
 }

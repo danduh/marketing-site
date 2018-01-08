@@ -1,0 +1,46 @@
+@import '~@angular/material/theming';
+
+// Plus imports for other components in your app.
+
+// Include the base styles for Angular Material core. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+@include mat-core();
+
+$app-primary: mat-palette($mat-green);
+$app-accent: mat-palette($mat-blue, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$app-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($app-theme);
+
+$matToolbarRowHeight: 64px;
+
+.mat-cell {
+    font-size: 18px;
+}
+
+.mat-header-cell {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.mat-sidenav-container {
+    height: calc(100% - #{$matToolbarRowHeight}) !important;
+}
+
+.mat-row {
+    &:nth-child(even) {
+        background: #EEEEEE
+    }
+}
+
+.mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary, .mat-toolbar.mat-primary {
+    color: #FFF;
+}
